@@ -69,7 +69,7 @@ public class BinSearch<T extends Comparable<T>> {
         inorderTraversalRecursive(root);
     }
 
-    private void inorderTraversalRecursive(TreeNode node) {
+    public void inorderTraversalRecursive(TreeNode node) {
         if (node != null) {
             inorderTraversalRecursive(node.left);
             System.out.print(node.value + " ");
@@ -83,11 +83,11 @@ public class BinSearch<T extends Comparable<T>> {
     }
 
     // Preorder traversal of the BST
-    private void preorderTraversal() {
+    public void preorderTraversal() {
         preorderTraversalRecursive(root);
     }
 
-    private void preorderTraversalRecursive(TreeNode node) {
+    public void preorderTraversalRecursive(TreeNode node) {
         if (node != null) {
             System.out.print(node.value + " ");
             preorderTraversalRecursive(node.left);
@@ -96,11 +96,11 @@ public class BinSearch<T extends Comparable<T>> {
     }
 
     // Post-order traversal of the BST
-private void postorderTraversal() {
+public void postorderTraversal() {
     postorderTraversalRecursive(root);
 }
 
-private void postorderTraversalRecursive(TreeNode node) {
+public void postorderTraversalRecursive(TreeNode node) {
     if (node != null) {
         postorderTraversalRecursive(node.left);
         postorderTraversalRecursive(node.right);
@@ -205,7 +205,7 @@ private void postorderTraversalRecursive(TreeNode node) {
         }
     }
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         System.out.println("===================================\n");
         System.out.println("BINARY SEARCH TREE IMPLEMENTATION\n");
         System.out.println("===================================\n");

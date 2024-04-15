@@ -19,5 +19,8 @@ run:
 	@echo "Running..."
 	@$(JAVA) -cp "dep/*:classes" BinSearch
 
+test:
+	@echo "Running tests..."
+	@java -cp "$(CLASSPATH)" org.junit.runner.JUnitCore BinSearchTest
 
-.PHONY: all clean compile run dropTables
+.PHONY: all clean compile run
