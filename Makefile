@@ -9,6 +9,7 @@ all: clean compile run
 clean:
 	@echo "Cleaning..."
 	@rm -rf $(BUILD_DIR)/*.class
+	@rm -rf BST.png
 
 compile:
 	@echo "Compiling..."
